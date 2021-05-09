@@ -3,7 +3,78 @@
 @tailwind utilities;
 
 @layer components {
-    .component-input {
-        @apply w-full border-solid border px-4 py-3 focus:border-black focus:outline-none;
-    }
+  /* badge */
+  .c-badge {
+    @apply px-2 py-1 text-sm;
+  }
+
+  .c-badge--small {
+    @apply pl-1 pr-1 text-xs;
+  }
+
+  /* btn */
+  .c-btn--primary {
+    @apply border-solid border border-black py-2 px-4 hover:bg-black hover:text-white;
+  }
+
+  .c-btn--disabled {
+    @apply border-solid border py-2 px-4 cursor-not-allowed;  
+  }
+
+  .c-btn--secondary {
+    @apply text-white font-bold py-2 px-4 hover:opacity-75;
+  }
+
+  .c-btn--tertiry {
+    @apply font-bold py-2 px-4 hover:opacity-75;
+  }
+
+  .c-btn--white {
+    @apply bg-white text-black font-bold py-2 px-4 hover:opacity-75;
+  }
+
+  /* input */
+  .c-input {
+    @apply w-full border-solid border px-4 py-3 focus:outline-none;
+  }
+
+  /* curatos */
+  .c-curator--circle {
+    @apply border-solid border border-gray-600 rounded-full h-8 w-8 flex items-center justify-center;
+  }
+
+  .c-curator--circle__large {
+    @apply border-solid border border-gray-600 rounded-full flex items-center justify-center h-8 w-8 md:h-20 md:w-20;
+  }
+
+  .c-curator--text {
+    @apply pl-2 text-sm font-bold pr-2;
+  }
+
+  /* title */
+  .c-title {
+    @apply text-2xl leading-tight md:text-4xl font-bold;
+  }
+
+  .c-sub-title {
+    @apply font-bold text-2xl text-center;
+  }
+
+  /* top topic */
+  .c-tf--top {
+    @apply flex items-center mb-3 justify-center;
+  }
+
+  .c-tf--title {
+    @apply flex items-center justify-center;
+  }
+
+  /* card */
+  .c-card--title {
+    @apply font-bold px-1 py-2;
+  }
+
+  .c-card--box {
+    @apply border border-solid border-white p-2 overflow-auto;
+  }
 }
