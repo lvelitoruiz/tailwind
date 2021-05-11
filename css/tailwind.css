@@ -38,6 +38,11 @@
     @apply w-full border-solid border px-4 py-3 focus:outline-none;
   }
 
+  /* select */
+  .c-select--option {
+    @apply absolute bg-white flex flex-col w-full focus:border-black focus:outline-none border border-solid z-10;
+  }
+
   /* curatos */
   .c-curator--circle {
     @apply border-solid border border-gray-600 rounded-full h-8 w-8 flex items-center justify-center;
