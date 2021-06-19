@@ -1,0 +1,44 @@
+.input-modal {
+    @apply w-full border-solid border border-black px-4 py-3 focus:outline-none focus:border-blue-700;
+}
+
+.input-modal:focus {
+  @apply border-2;
+}
+
+.input-modal-span {
+  @apply w-full border-solid border border-black px-4 py-2 focus:outline-none focus:border-blue-700 flex;
+}
+
+.input-modal-span:focus {
+  @apply border-2;
+}
+
+.input-modal-container {
+  @apply mt-4 mr-4 w-full relative; 
+}
+
+.input-modal-container:focus {
+  @apply border-2;
+}
+
+
+.select-fake-modal {
+  @apply w-full border-solid border-l border-r border-b border-black focus:outline-none focus:border-blue-700;
+}
+
+.select-fake-modal:focus {
+  @apply border-2;
+}
+
+.select-fake-modal-option {
+  @apply flex items-center px-4 py-3;
+}
+
+.select-modal {
+  @apply absolute bg-white flex flex-col w-full focus:border-blue-700 focus:outline-none border border-solid z-10;
+}
+
+.select-modal:focus {
+  @apply border-2;
+}

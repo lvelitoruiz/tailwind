@@ -1,0 +1,126 @@
+.whitespace-no-wrap {
+    white-space: nowrap;
+}
+
+.c-header {
+    @apply fixed w-full z-20 border-solid border-b;
+}
+
+.c-header--top {
+    background-image: url(../static/img/header-top.jpg);
+    height: 40px;
+    width: 100%;
+    background-size: 100%;
+    @apply items-center justify-center flex md:justify-between;
+}
+
+.c-header--logo {
+    @apply text-xl md:pl-4;
+}
+
+.c-header--item {
+    @apply text-white p-2 font-bold text-xs;
+}
+
+.c-header--item--last {
+    @apply text-white p-2 pr-4 font-bold text-xs;
+}
+
+.c-header--dropdown {
+    @apply flex items-center cursor-pointer;
+}
+
+.c-header--dropdown--initials {
+    @apply border-solid border border-gray-600 bg-white rounded-full h-8 w-8 flex items-center justify-center;
+}
+
+.c-header--dropdown--name {
+    @apply pl-2 text-sm font-bold pr-2 text-white;
+}
+
+.c-header--dropdown--body {
+    right: 0;
+    width: 140px;
+    padding: 10px 0;
+    @apply absolute bg-black flex flex-col w-full z-10 border border-black shadow-lg items-end;
+}
+
+.c-header--dropdown--body--item {
+    @apply flex text-white items-center h-8 px-5 text-sm w-full justify-end hover:bg-gray-200 whitespace-no-wrap hover:text-black;
+}
+
+.c-header-nav {
+    @apply bg-white;
+}
+
+.c-header-nav--container {
+    @apply container mx-auto;
+}
+
+.c-header-nav--sections {
+    @apply flex items-center relative lg:grid lg:grid-cols-8;
+}
+
+.c-header-nav--icon--section {
+    @apply w-full md:col-span-1 lg:p-0 lg:w-auto;
+}
+
+.c-header-nav--content {
+    @apply md:col-span-6 lg:p-0;
+}
+
+.c-header-nav--menu {
+    @apply flex items-center lg:grid lg:grid-cols-10;
+}
+
+.c-header-nav--menu--items {
+    @apply md:col-start-1 md:col-span-10 lg:col-start-2 lg:col-span-10;
+}
+
+.c-header-nav--menu--item--topics {
+    @apply hidden p-4 border-solid border-l whitespace-no-wrap lg:block;
+}
+
+.c-header-nav--menu--item--links {
+    @apply hidden p-4 border-solid border-l w-full lg:block;
+}
+
+.c-header-nav--menu--item--mood {
+    @apply hidden p-4 border-solid border-l border-r lg:block;
+}
+
+.c-header-nav-title {
+    @apply font-bold pb-2;
+}
+
+
+.nav-mobile {
+    margin-top: 1px;
+    display: none;
+    @apply flex absolute bg-white w-full p-4 justify-between items-end;
+}
+
+.nav-mobile--text {
+    @apply text-sm font-bold;
+}
+
+.nav-mobile--icon {
+    @apply ml-2 mr-2 text-xl;
+}
+
+.nav-mobile--text--big {
+    @apply text-2xl;
+}
+
+.nav-mobile--icon--eye {
+    @apply flex justify-end;
+}
+
+.c-header-nav--hamburger {
+    @apply w-full md:col-span-1 lg:p-0 lg:w-auto;
+}
+
+.c-header-nav--icon--close {
+    @apply text-sm cursor-pointer mt-3;
+}
+

@@ -1,0 +1,23 @@
+.modal-container {
+    @apply h-full overflow-auto;
+  }
+
+.modal-block {
+    @apply flex items-center mb-4;
+}
+
+.modal-title {
+    @apply font-bold m-0 pr-2;
+}
+
+.modal-title {
+    @apply font-bold m-0 pr-2;
+}
+
+.modal-label {
+  @apply text-sm font-bold mb-1
+}
+
+.modal-initials {
+    @apply border-solid border border-black rounded-full h-8 w-8 flex items-center justify-center mr-1;
+}

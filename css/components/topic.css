@@ -1,0 +1,35 @@
+.topic-filter--list {
+    @apply flex overflow-auto pb-10 md:justify-end;
+}
+
+.topic-filter--item {
+    @apply text-sm;
+}
+
+.topic-directory--item {
+    @apply border-solid border-b pt-8 pb-4;
+}
+
+.topic-directory--item--pill {
+    background: rgba(12, 62, 241, 0.1);
+    color: #0c3ef1;
+    @apply px-2 py-1 text-sm
+}
+
+.topic-directory--item--options {
+    @apply mt-6 flex items-center flex-wrap;
+}
+
+.topic-directory--item--options--text {
+    @apply pr-8 mb-4;
+}
+
+.topic-directory--item--options--number {
+    color: #a0a0a0;
+    @apply pl-2;
+}
+
+.topic-directory--item--options--eye {
+    cursor: pointer;
+    @apply pl-2 text-3xl mb-4 hover:text-blue-700;
+}

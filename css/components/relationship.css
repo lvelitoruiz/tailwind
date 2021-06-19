@@ -1,0 +1,42 @@
+.relationship-container {
+    @apply md:grid md:grid-cols-12 gap-4 pb-16 mt-8 md:mt-12;
+}
+
+.relationship-container--inner {
+    @apply md:col-start-3 md:col-span-8 lg:col-start-4 lg:col-span-6;
+}
+
+.relationship-container--item {
+    cursor: pointer;
+    @apply flex border-b border-gray-300 pt-2 pb-4 grid grid-cols-12 mb-4 relative;
+}
+
+.relationship-container--item--text {
+    @apply flex items-center text-gray-400 font-bold;
+}
+
+.relationship-container--tooltip {
+    box-shadow: 3px 3px 6px 3px rgba(0,0,0,0.1);
+    left: 0;
+    top: 50%;
+    z-index: 0;
+    transform: translate(0%,-50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    @apply text-gray-400 border border-gray-300 absolute py-2 px-4 bg-white;
+}
+
+.relationship-container--item:hover .relationship-container--tooltip {
+    box-shadow: 3px 3px 6px 3px rgba(0,0,0,0.1);
+    left: 0;
+    top: 50%;
+    z-index: 10;
+    transform: translate(-100%,-50%);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    @apply text-gray-400 border border-gray-300 absolute py-2 px-4 bg-white;
+}
+
+.relationship-container--tooltip--link {
+    text-decoration: underline;
+}

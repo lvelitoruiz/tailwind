@@ -1,3 +1,10 @@
+@import "./components/input.css";
+@import "./components/modal.css";
+@import "./components/header.css";
+@import "./components/tabs.css";
+@import "./components/topic.css";
+@import "./components/relationship.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -77,4 +84,10 @@
   .c-card--box {
     @apply border border-solid border-white p-2 overflow-auto;
   }
+
+  /* Modal input */
+
+  
+
+
 }
